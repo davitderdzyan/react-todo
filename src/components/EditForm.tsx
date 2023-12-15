@@ -17,6 +17,7 @@ export function EditForm({ todoId = -1 }: Props) {
   let todo = useSelector((state: RootState) => state.todos.todos).find(
     (todo) => todo.id == todoId
   );
+
   todo = todo || {
     title: "",
     description: "",
