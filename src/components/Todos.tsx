@@ -41,7 +41,7 @@ const Todos = ({ showDeletedItems = false }: Props) => {
               <Flex vertical justify="space-between" align="center">
                 <Title level={5}>Title: {todo.title}</Title>
                 <Text type="secondary">
-                  Description: {todo.description ?? "Does not specified"}
+                  Description: {todo.description || "Does not specified"}
                 </Text>
                 <Text>
                   Deadline:{" "}
